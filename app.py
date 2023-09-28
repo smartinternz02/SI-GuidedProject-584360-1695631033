@@ -11,7 +11,7 @@ import requests
 
 app = Flask(__name__)
 app.secret_key = 'a'
-conn = ibm_db.connect("DATABASE=bludb; HOSTNAME=19af6446-6171-4641-8aba-9dcff8e1b6ff.c1ogj3sd0tgtu0lqde00.databases.appdomain.cloud; PORT=30699; UID=bns29209;PASSWORD=fv6rxjIt3Yj4jMAq; SECURITY=SSL;SSLServerCertificate = DigiCertGlobalRootCA.crt", "", "")
+conn = ibm_db.connect("DATABASE=bludb; HOSTNAME=2f3279a5-73d1-4859-88f0-a6c3e6b4b907.c3n41cmd0nqnrk39u98g.databases.appdomain.cloud; PORT=30756; UID=csj03196;PASSWORD=XksApgLLmMre7rDo; SECURITY=SSL;SSLCertificate = DigiCertGlobalRootCA.crt", "", "")
 url = "https://rapidprod-sendgrid-v1.p.rapidapi.com/mail/send"
 @app.route("/")
 def index():
